@@ -1,6 +1,8 @@
 # GTA VI Trophy Guide & Tracker
 
-[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01)](https://make.fun/bounty/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/skynurul/gta6-trophy-guide/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/skynurul/gta6-trophy-guide/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide and tracker for all 55 PlayStation 5 trophies of **Grand Theft Auto VI**, built as an entry for make.fun's bounty “Build the best GTA 6 trophy guide” (gta6-trophy-guide-01).
 
@@ -56,6 +58,6 @@ MAKEFUN_OUTPUT_DIR=out node main.ts
 
 ## Sources
 
-The guides were checked against PowerPyx, Push Square, GTABase, PlayStationTrophies.org, PSNProfiles, TrueTrophies, Exophase, GTA Zone, Output Lag, KeenGamer and EGamers. See `app/data/trophies.json` (`sourceList` and each trophy's `sources`) for the exact source of every guide.
+The guides were checked against PowerPyx, Push Square, PlayStationTrophies.org, PSNProfiles, TrueTrophies, Exophase, GTA Zone, Output Lag, KeenGamer and EGamers. See `app/data/trophies.json` (`sourceList` and each trophy's `sources`) for the exact source of every guide.
 
 Unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork, box art or game screenshots are used here.
