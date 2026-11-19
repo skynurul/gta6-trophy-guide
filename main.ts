@@ -1,9 +1,9 @@
 // Entry point for the GTA VI trophy guide.
-// Copies app/ and screenshots/ to the output directory and writes
+// Copies app/ and screenshots/ into the output directory and writes
 // /output/dossier.json from them with buildDossier (vendor/makefun-frontend.ts).
 // The output directory is MAKEFUN_OUTPUT_DIR when set, otherwise /output.
 // Run with Node 22:  MAKEFUN_OUTPUT_DIR=out node main.ts
-import { cpSync, existsSync, mkdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { buildDossier } from './vendor/makefun-frontend.ts';
 
@@ -15,8 +15,13 @@ const shotsDir = join(repoRoot, 'screenshots');
 
 // The output directory is rebuilt from scratch every run so the result is
 // deterministic (a stale file from an earlier run must never survive).
-if (existsSync(outDir)) rmSync(outDir, { recursive: true, force: true });
+// The directory itself is never removed: in the grader it is a Docker bind
+// mount, and removing a mount point fails. So create it when it is missing
+// and empty only what is inside it, leaving the directory in place.
 mkdirSync(outDir, { recursive: true });
+for (const entry of readdirSync(outDir)) {
+  rmSync(join(outDir, entry), { recursive: true, force: true });
+}
 
 // Copy app/ and screenshots/ beside this file into the output directory.
 // cpSync refuses symlinks by default when dereference is false, which is what

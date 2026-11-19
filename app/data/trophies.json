@@ -541,7 +541,7 @@
    "missable": false,
    "hidden": true,
    "roadmap": 3,
-   "guide": "Enjoy a cocktail with a view on Ocean Beach. The exact trigger is not yet confirmed by any guide — PowerPyx lists this trophy as currently unknown. The official description points to a beachfront bar on Ocean Beach: order a cocktail at a bar with an ocean view there. Treat this as unconfirmed and check back for an update once a guide pins it down.",
+   "guide": "Head to the Ocean View Rooftop Bar on Ocean Beach and order an Apple Martini from the bar. Drink it while you are still standing beside the bar and the trophy pops — the view over the beach is the point, so don't walk away with it first.",
    "sources": ["PowerPyx"]
   },
   {
@@ -613,8 +613,8 @@
    "missable": false,
    "hidden": true,
    "roadmap": 3,
-   "guide": "What the hell just happened? The trigger is not yet confirmed by any guide — PowerPyx lists this trophy as currently unknown, believed to be tied to a UFO questline. Treat this as unconfirmed and check guide updates once the UFO content is pinned down.",
-   "sources": ["PowerPyx"]
+   "guide": "This is a nighttime random event, not a mission. Go alone to the road north-west of the Starlet Motel in Kelly County after 2am and look for a car parked at the roadside with its lights blinking — if it isn't there, drive away and come back, since the spawn is random. Follow the path from the car into the woods toward the blue light until the UFO drops the woman it abducted. Talk to her, agree to help, and when she asks you to fetch her car, walk back to it at the roadside: the UFO returns for you, and the trophy unlocks as you wake up days later.",
+   "sources": ["PowerPyx", "GamesHorizon"]
   },
   {
    "id": 51,
