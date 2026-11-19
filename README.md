@@ -21,10 +21,10 @@ Open `app/index.html` in a desktop browser — it works with the network off. It
 
 ## Facts about the list
 
-- 55 trophies: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze. 27 visible, 28 hidden.
-- All 55 are offline and single-player — there are no online trophies, no difficulty settings, no mission replay and no New Game+.
+- 55 trophies: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze.
+- All 55 are offline and single-player — there are no online trophies.
+- Five trophies are still unconfirmed by any guide; this page says so plainly instead of guessing a method.
 - Cheats disable trophies and saving.
-- There are 15 manual save slots plus 1 autosave. Keep a save at the start and end of each chapter (10 saves), then rotate the other 5 for free-roam cleanup.
 
 ## How to run it
 
