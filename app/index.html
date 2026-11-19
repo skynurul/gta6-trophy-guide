@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 Trophies to Platinum</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI, with a roadmap to the platinum, a missable-trophy warning and a guide for every trophy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0b16'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='bold' fill='%23f5c542' text-anchor='middle'%3EVI%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="tagline">Every trophy, a real guide for each one, and a tracker that remembers where you are — all offline.</p>
+    <div class="progress-wrap" aria-label="Progress to platinum">
+      <div class="progress-line">
+        <span id="progress-text">0 of 55 earned</span>
+        <span id="progress-pct">0% to platinum</span>
+      </div>
+      <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width:0%"></div></div>
+      <div id="grade-counts" class="grade-counts"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="callout missable-callout" id="missable-callout">
+    <strong>One trophy can be missed.</strong>
+    <span><a href="#trophy-28">Positive Mental Attitude</a> — meditate at every spot — has a first step that only exists in Chapter 1. Do it before you finish Chapter 1 (see its guide). Everything else can be cleaned up after the story.</span>
+  </section>
+
+  <section class="tracker" aria-label="Trophy tracker">
+    <h2>Trophy tracker</h2>
+    <p id="tracker-progress" class="tracker-progress">0 of 55 earned · 0% to platinum</p>
+    <div class="toolbar">
+      <label class="search-label">Search
+        <input id="search" type="search" placeholder="Trophy name, guide, place…" autocomplete="off">
+      </label>
+      <div class="filter-group" role="group" aria-label="Filter by kind">
+        <button type="button" class="chip is-active" data-kind="all">All</button>
+        <button type="button" class="chip" data-kind="story">Story</button>
+        <button type="button" class="chip" data-kind="missable">Missable</button>
+        <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+        <button type="button" class="chip" data-kind="activities">Activities</button>
+        <button type="button" class="chip" data-kind="online">Online</button>
+      </div>
+      <label class="select-label">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="select-label">Status
+        <select id="status-filter">
+          <option value="all">All</option>
+          <option value="earned">Earned</option>
+          <option value="not-earned">Not earned</option>
+        </select>
+      </label>
+      <label class="toggle-label"><input id="spoiler-toggle" type="checkbox"> Hide story spoilers until earned</label>
+    </div>
+    <div class="actions">
+      <button id="export" type="button">Export progress</button>
+      <label class="import-label">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset progress</button>
+      <span id="list-count" class="list-count"></span>
+    </div>
+    <div id="empty-state" class="empty-state" hidden></div>
+    <ol id="trophy-list" class="trophy-list"></ol>
+  </section>
+
+  <section class="roadmap" aria-label="Roadmap to platinum">
+    <h2>Roadmap to platinum</h2>
+    <p class="section-note">Play in this order. Story first, then the 100% checklist, then strangers and cleanup. Nothing except the one missable meditation is missable.</p>
+    <div id="roadmap-stages" class="roadmap-stages"></div>
+  </section>
+
+  <section class="tips" aria-label="Tips before you start">
+    <h2>Before you start</h2>
+    <ul>
+      <li><strong>Save often, in different slots.</strong> There are 15 manual save slots plus 1 autosave, no mission replay and no New Game+. Keep a save at the start and end of each chapter (10 saves), then rotate the other 5 for free-roam cleanup.</li>
+      <li><strong>Cheats disable trophies and saving.</strong> Do not turn cheats on while hunting trophies.</li>
+      <li><strong>No online trophies.</strong> All 55 are offline and single-player. Difficulty is about 4 out of 10; the platinum takes roughly 200 hours.</li>
+      <li><strong>Progress is saved in your browser</strong> (localStorage). Export a backup before you clear browser data — import brings it back.</li>
+    </ul>
+  </section>
+
+  <section class="sources" aria-label="Sources">
+    <h2>Sources</h2>
+    <p>Every guide on this page was written in our own words. The facts were checked against these guides; the official trophy names, descriptions and grades are as PlayStation publishes them.</p>
+    <ul id="source-list" class="source-list"></ul>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork, box art or game screenshots are used here.</p>
+  <p>Built as an entry for the make.fun bounty “Build the best GTA 6 trophy guide”.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
